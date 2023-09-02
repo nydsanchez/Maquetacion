@@ -79,14 +79,15 @@ body{
     width: 18rem;
     margin-top: 7rem;
     position: relative;
-    background-color: var(--main_color);
-    border: 3px solid var(--main_color);
-    border-radius: 50%;
-    overflow: hidden;
+   
+  
 }
 
 .user-info__img{
     width: 100%;
+    background-color: var(--main_color);
+    border: 3px solid var(--main_color);
+    border-radius: 50%;
 }
 .user-info__name, .user-info__job{
     color: var(--main_color);
