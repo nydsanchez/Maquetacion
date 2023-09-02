@@ -1,0 +1,93 @@
+/* DEFINICION DE VARIABLES */
+:root{
+    --main_color: #fff;
+    --sec_color: #04b4e0;
+    --bk-color: #f2f7f9;
+    --icon-color: #b5b6b7;
+    --title-color:#222;
+    --subtitle-color:#888;
+    --content-color:#555;
+    --transparent: transparent;
+}
+
+/* ESTILOS GENERALES */
+html{
+    font-size: 10px;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background: var(--bk-color);
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: var(--content-color);
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: var(--title-color);
+}
+
+/* IMAGEN DE FONDO DEL BODY */
+body{
+    background-image: url(../img/fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -20px -120px;
+}
+
+/* ESTRUCTURA DEL LAYOUT */
+.layout{
+    position: relative;
+    min-width: 1100px;
+    width: 75%;
+    height: 80vh;
+    min-height: 80vh;
+    margin: 10vh auto;
+    display: grid;
+    grid-template-areas: 'aside content';
+    grid-template-columns: 30% 70%;
+    box-shadow: 0 0 100px -5px rgba(0,0,0,.25);
+    border-radius: 4rem;
+}
+
+/* BARRA LATERAL ASIDE */
+.layout__aside{
+    grid-area: aside;
+    overflow: auto;
+    overflow-x: hidden;
+    border-radius: 4rem;
+}
+
+.layout__content{
+    grid-area: content; 
+}
+
+.aside__user-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100%;
+    min-width: 30rem;
+    background: var(--sec_color);
+    color: var(--main_color);
+}
+
+.user-info__container-img{
+    display: inline-block;
+    width: 18rem;
+    margin-top: 7rem;
+    position: relative;
+    background-color: var(--main_color);
+    border: 3px solid var(--main_color);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user-info__img{
+    width: 100%;
+}
+.user-info__name, .user-info__job{
+    color: var(--main_color);
+}
