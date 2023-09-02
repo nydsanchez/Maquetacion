@@ -124,6 +124,12 @@ body{
     margin-bottom: 3.6rem;
 }
 
+.links__social{
+    margin-top: 2rem;
+    text-align: center;
+    display: flex;
+    gap: 1rem;
+}
 
 /* CONTENIDO */
 .layout__content{
