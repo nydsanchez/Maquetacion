@@ -62,7 +62,7 @@ body {
   grid-area: aside;
   overflow: auto;
   overflow-x: hidden;
-  border-radius: 4rem;
+  border-radius: 4rem 0 0 4rem;
 }
 
 .aside__user-info {
@@ -82,6 +82,10 @@ body {
   margin-top: 6rem;
   position: relative;
   z-index: 1;
+  background: var(--main_color);
+  border: 3px solid var(--main_color);
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .user-info__container-img::after {
@@ -107,9 +111,6 @@ body {
 
 .user-info__img {
   width: 100%;
-  background-color: var(--main_color);
-  border: 3px solid var(--main_color);
-  border-radius: 50%;
 }
 .user-info__name,
 .user-info__job {
@@ -156,7 +157,7 @@ body {
 }
 
 .user-info__buttons {
-  margin-top: 0.5rem;
+  margin-top: 1.5rem;
   margin-bottom: 2rem;
 }
 
