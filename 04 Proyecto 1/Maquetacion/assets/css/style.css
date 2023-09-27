@@ -236,9 +236,15 @@ body {
   width: 100%;
   text-align: center;
 }
+
+.menu__option:hover .menu__icon {
+  color: var(--sec_color);
+}
+
 .menu__icon {
   color: var(--icon-color);
   font-size: 2.5rem;
+  transition: all 300ms ease-in-out;
 }
 
 .menu_overlay {
