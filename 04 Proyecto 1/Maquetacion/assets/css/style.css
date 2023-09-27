@@ -39,7 +39,7 @@ body {
   background-image: url(../img/fondo.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: -20px -120px;
+  background-position: -15px -120px;
 }
 
 /* ESTRUCTURA DEL LAYOUT */
@@ -53,7 +53,7 @@ body {
   display: grid;
   grid-template-areas: "aside content";
   grid-template-columns: 30% 70%;
-  box-shadow: 0 0 100px -5px rgba(0, 0, 0, 0.25); /* estudiar bien esot */
+  box-shadow: 0 0 100px -5px rgba(0, 0, 0, 0.35); /* estudiar bien esot */
   border-radius: 4rem;
 }
 
@@ -82,17 +82,20 @@ body {
   margin-top: 6rem;
   position: relative;
   z-index: 1;
+}
+
+.user-info__img {
+  width: 100%;
   background: var(--main_color);
   border: 3px solid var(--main_color);
   border-radius: 50%;
-  overflow: hidden;
 }
 
 .user-info__container-img::after {
   /* INVESTIGAR ACERCA DE ::AFTER Y TODO LO QUE HAY DENTRO */
   content: "";
   position: absolute;
-  top: 4%;
+  top: 5%;
   left: 9%;
   width: 100%;
   height: 100%;
@@ -109,9 +112,6 @@ body {
   border-radius: 30rem;
 }
 
-.user-info__img {
-  width: 100%;
-}
 .user-info__name,
 .user-info__job {
   color: var(--main_color);
@@ -119,8 +119,8 @@ body {
 }
 
 .user-info__name {
-  font-size: 3.2rem;
-  margin-top: 2.5rem;
+  font-size: 2.8rem;
+  margin-top: 2.6rem;
 }
 
 .user-info__job {
@@ -132,11 +132,11 @@ body {
 }
 
 .user_info--links {
-  margin-bottom: 2.6rem;
+  margin-bottom: 3.6rem;
 }
 
 .links__social {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   text-align: center;
   display: flex;
 }
@@ -145,8 +145,8 @@ body {
   height: 3rem;
   width: 3rem;
   font-size: 1.8rem;
-  opacity: 0.8;
-  line-height: 3.2rem;
+  opacity: 0.9;
+  line-height: 3rem;
   border-radius: 3rem;
   transition: all 300ms ease-in-out; /* REVISAR COMO FUNCIONA LO DE TRANSITION */
 }
@@ -157,12 +157,13 @@ body {
 }
 
 .user-info__buttons {
-  margin-top: 1.5rem;
-  margin-bottom: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 4rem;
 }
 
 .user-info__btn {
-  padding: 1.3rem 3rem;
+  padding: 1.5rem 3rem;
+  line-height: 1rem;
   border: 2px solid var(--main_color);
   border-radius: 3.2rem;
   color: var(--main_color);
@@ -188,4 +189,24 @@ body {
   min-height: 100%;
   background: var(--sec_color);
   border-radius: 0 10rem 10rem 0;
+}
+
+.content__page {
+  background: var(--main_color);
+  min-height: 100%;
+  border-radius: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.page__name {
+  font-size: 6rem;
+  margin-bottom: 1rem;
+}
+
+.page__job {
+  font-size: 2.1rem;
+  font-weight: lighter;
 }
