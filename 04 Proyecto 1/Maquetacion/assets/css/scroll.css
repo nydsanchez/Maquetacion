@@ -1,0 +1,11 @@
+/* SCROLL PARA MOZZILA */
+
+/* SCROLL PARA CHROME */
+.content__page::-webkit-scrollbar {
+  width: 25px;
+  background: gray;
+}
+
+.content__page::-webkit-scrollbar-thumb {
+  border: 1px red solid;
+}
