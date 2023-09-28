@@ -22,7 +22,6 @@ body {
   font-family: "Poppins", Helvetica, sans-serif;
   font-size: 1.5rem;
   color: var(--content-color);
-  border: 1px solid var(--bk-color);
 }
 
 h1,
@@ -182,6 +181,7 @@ body {
 .layout__content {
   grid-area: content;
   height: 100%;
+
   min-height: 100%;
   background: var(--sec_color);
   border-radius: 0 10rem 10rem 0;
@@ -189,6 +189,7 @@ body {
 
 .content__page {
   background: var(--main_color);
+
   min-height: 100%;
   border-radius: 3.2rem;
   display: flex;
@@ -264,4 +265,18 @@ body {
 .menu__option:hover .menu_overlay {
   opacity: 1;
   right: 100%;
+}
+
+/* ABOUT ME SECTION */
+
+.content__about {
+  height: 100%;
+  min-height: 100%;
+  padding: 6rem 3rem 6rem 6rem;
+  overflow: auto;
+  /*  display: block; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: justify;
 }
